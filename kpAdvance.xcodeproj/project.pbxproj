@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
-		75CF455221F5FF7E00BE4AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455021F5FF7E00BE4AC9 /* Main.storyboard */; };
 		75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */; };
 		75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */; };
 		75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */; };
@@ -22,7 +21,6 @@
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75CF455121F5FF7E00BE4AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75CF455621F5FF7F00BE4AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CF455821F5FF7F00BE4AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			children = (
 				75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */,
 				75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */,
-				75CF455021F5FF7E00BE4AC9 /* Main.storyboard */,
 				75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */,
 				75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */,
 				75CF455821F5FF7F00BE4AC9 /* Info.plist */,
@@ -154,7 +151,6 @@
 				75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */,
 				75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */,
 				75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */,
-				75CF455221F5FF7E00BE4AC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +210,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75CF455021F5FF7E00BE4AC9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75CF455121F5FF7E00BE4AC9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,7 +345,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UALYYJUG6;
 				INFOPLIST_FILE = kpAdvance/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qulix.kpAdvance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -373,7 +364,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UALYYJUG6;
 				INFOPLIST_FILE = kpAdvance/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qulix.kpAdvance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
