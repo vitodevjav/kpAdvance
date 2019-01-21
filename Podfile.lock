@@ -48,9 +48,26 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - PromiseKit (6.7.0):
+    - PromiseKit/CorePromise (= 6.7.0)
+    - PromiseKit/Foundation (= 6.7.0)
+    - PromiseKit/UIKit (= 6.7.0)
+  - PromiseKit/CorePromise (6.7.0)
+  - PromiseKit/Foundation (6.7.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.7.0):
+    - PromiseKit/CorePromise
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
   - Firebase/Core
+  - PromiseKit (~> 6.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -61,6 +78,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+    - PromiseKit
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
 
 SPEC CHECKSUMS:
   Firebase: 963d5685fae888a56d6d4d9cfce6b9c976958798
@@ -70,7 +91,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 8df328c281e16a1d6f8d1d05ab2609a8f38a9e7b
+PODFILE CHECKSUM: f9f3d1f64ba2e83355cef5eda1e3bf5ce8ab5bab
 
 COCOAPODS: 1.5.3
