@@ -7,5 +7,4 @@ target 'kpAdvance' do
 
   # Pods for kpAdvance
 	pod 'Firebase/Core'
-
 end
