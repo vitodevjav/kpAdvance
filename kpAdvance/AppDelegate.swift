@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: ViewController())
         window.rootViewController = navigationController
         self.window = window
-        let cds = CoreDataStack()
         window.makeKeyAndVisible()
         return true
     }
