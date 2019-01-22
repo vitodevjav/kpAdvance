@@ -12,10 +12,6 @@ import CoreData
 
 @objc(Transaction)
 public class Transaction: NSManagedObject {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Transaction> {
-        return NSFetchRequest<Transaction>(entityName: "Transaction")
-    }
-
     @NSManaged public var date: NSDate?
     @NSManaged public var id: String?
     @NSManaged public var value: Double

@@ -12,10 +12,6 @@ import CoreData
 
 @objc(Event)
 public class Event: NSManagedObject {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Event> {
-        return NSFetchRequest<Event>(entityName: "Event")
-    }
-
     @NSManaged public var endDate: NSDate?
     @NSManaged public var eventDescription: String?
     @NSManaged public var id: String?

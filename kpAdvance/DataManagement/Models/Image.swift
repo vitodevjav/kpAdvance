@@ -12,11 +12,6 @@ import CoreData
 
 @objc(Image)
 public class Image: NSManagedObject {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Image> {
-        return NSFetchRequest<Image>(entityName: "Image")
-    }
-
     @NSManaged public var id: String?
     @NSManaged public var localUlr: String?
     @NSManaged public var url: String?
