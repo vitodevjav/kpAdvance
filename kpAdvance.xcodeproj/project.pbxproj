@@ -23,6 +23,8 @@
 		75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */; };
 		B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */; };
 		B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */; };
+		B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */; };
+		B00B8356221B2E7500ADBE4B /* TrackingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */; };
 		FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpAdvanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00B8349221B26CE00ADBE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractorTests.swift; sourceTree = "<group>"; };
+		B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingDataStore.swift; sourceTree = "<group>"; };
+		B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingTimer.swift; sourceTree = "<group>"; };
 		CD08069178A9D7764DB220DF /* Pods-kpAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,7 @@
 		75CF454B21F5FF7E00BE4AC9 /* kpAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				B00B8352221B2A6400ADBE4B /* TrackingBusinessModel */,
 				75CF456321F61EBD00BE4AC9 /* DataManagement */,
 				75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */,
 				75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */,
@@ -134,7 +139,6 @@
 				75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */,
 				75CF455821F5FF7F00BE4AC9 /* Info.plist */,
 				75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */,
-				B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */,
 			);
 			path = kpAdvance;
 			sourceTree = "<group>";
@@ -156,6 +160,16 @@
 				B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */,
 			);
 			path = kpAdvanceTests;
+			sourceTree = "<group>";
+		};
+		B00B8352221B2A6400ADBE4B /* TrackingBusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */,
+				B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */,
+				B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */,
+			);
+			path = TrackingBusinessModel;
 			sourceTree = "<group>";
 		};
 		C6D7494944D17BFB5F57C3BE /* Frameworks */ = {
@@ -338,12 +352,14 @@
 				B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */,
 				7540515221F76C4F0065DCFA /* Account.swift in Sources */,
 				7501636A21F63B4500D3C965 /* Image.swift in Sources */,
+				B00B8356221B2E7500ADBE4B /* TrackingTimer.swift in Sources */,
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
 				7501636E21F63B4500D3C965 /* User.swift in Sources */,
 				75CF456521F61ED700BE4AC9 /* DataController.swift in Sources */,
 				7501636621F63B4500D3C965 /* Transaction.swift in Sources */,
 				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
 				7501636421F63B4500D3C965 /* Event.swift in Sources */,
+				B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */,
 				7501636C21F63B4500D3C965 /* EventType.swift in Sources */,
 				75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */,
 			);
