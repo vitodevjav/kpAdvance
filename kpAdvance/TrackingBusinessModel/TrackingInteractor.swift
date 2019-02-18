@@ -23,6 +23,7 @@ protocol TrackingInteractorProtocol {
 class TrackingInteractor {
 	var delegate: TrackingInteractorDelegateProtocol?
 	var trackingDataStore: TrackingDataStoreProtocol?
+	var trackingTimer: TrackingTimerProtocol?
 	private var currentTrackingInfo: String?
 	
 	
@@ -33,9 +34,18 @@ extension TrackingInteractor: TrackingInteractorProtocol {
 	func startTracking(item: String) {
 		currentTrackingInfo = item
 		delegate?.trackingInteractorDidUpdateCurrentTrackingInfo(item)
+		trackingTimer?.start()
 	}
 	
 	func stopTracking() {
-		<#code#>
+		trackingTimer?.stop()
+		guard let trackingInfo = currentTrackingInfo else { return }
+
+		trackingDataStore?.addTrackingInfo(trackingInfo)
+		currentTrackingInfo = nil
+		
+		guard let store = trackingDataStore else { return }
+
+		delegate?.trackingInteractorDidUpdateHistory(store.trackingHistory)
 	}
 }
