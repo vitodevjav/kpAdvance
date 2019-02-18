@@ -21,8 +21,20 @@
 		75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */; };
 		75CF456521F61ED700BE4AC9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456421F61ED700BE4AC9 /* DataController.swift */; };
 		75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */; };
+		B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */; };
+		B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */; };
 		FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00B834A221B26CE00ADBE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CF454121F5FF7E00BE4AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CF454821F5FF7E00BE4AC9;
+			remoteInfo = kpAdvance;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2FF3BD6974A3F42EBDC0767B /* Pods-kpAdvance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.release.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +55,10 @@
 		75CF456121F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kpAdvanceModel.xcdatamodel; sourceTree = "<group>"; };
 		75CF456421F61ED700BE4AC9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
+		B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpAdvanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00B8349221B26CE00ADBE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractorTests.swift; sourceTree = "<group>"; };
 		CD08069178A9D7764DB220DF /* Pods-kpAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +68,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00B8342221B26CE00ADBE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				75CF454B21F5FF7E00BE4AC9 /* kpAdvance */,
+				B00B8346221B26CE00ADBE4B /* kpAdvanceTests */,
 				75CF454A21F5FF7E00BE4AC9 /* Products */,
 				43DDF8BB125A20CA1193B841 /* Pods */,
 				C6D7494944D17BFB5F57C3BE /* Frameworks */,
@@ -94,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */,
+				B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +134,7 @@
 				75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */,
 				75CF455821F5FF7F00BE4AC9 /* Info.plist */,
 				75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */,
+				B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */,
 			);
 			path = kpAdvance;
 			sourceTree = "<group>";
@@ -121,6 +147,15 @@
 				75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */,
 			);
 			path = DataManagement;
+			sourceTree = "<group>";
+		};
+		B00B8346221B26CE00ADBE4B /* kpAdvanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B00B8349221B26CE00ADBE4B /* Info.plist */,
+				B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */,
+			);
+			path = kpAdvanceTests;
 			sourceTree = "<group>";
 		};
 		C6D7494944D17BFB5F57C3BE /* Frameworks */ = {
@@ -154,6 +189,24 @@
 			productReference = 75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B00B8344221B26CE00ADBE4B /* kpAdvanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00B834C221B26CE00ADBE4B /* Build configuration list for PBXNativeTarget "kpAdvanceTests" */;
+			buildPhases = (
+				B00B8341221B26CE00ADBE4B /* Sources */,
+				B00B8342221B26CE00ADBE4B /* Frameworks */,
+				B00B8343221B26CE00ADBE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00B834B221B26CE00ADBE4B /* PBXTargetDependency */,
+			);
+			name = kpAdvanceTests;
+			productName = kpAdvanceTests;
+			productReference = B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +219,10 @@
 				TargetAttributes = {
 					75CF454821F5FF7E00BE4AC9 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					B00B8344221B26CE00ADBE4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 75CF454821F5FF7E00BE4AC9;
 					};
 				};
 			};
@@ -183,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				75CF454821F5FF7E00BE4AC9 /* kpAdvance */,
+				B00B8344221B26CE00ADBE4B /* kpAdvanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +253,13 @@
 				75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */,
 				75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */,
 				75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00B8343221B26CE00ADBE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */,
+				B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */,
 				7540515221F76C4F0065DCFA /* Account.swift in Sources */,
 				7501636A21F63B4500D3C965 /* Image.swift in Sources */,
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
@@ -283,7 +349,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00B8341221B26CE00ADBE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00B834B221B26CE00ADBE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CF454821F5FF7E00BE4AC9 /* kpAdvance */;
+			targetProxy = B00B834A221B26CE00ADBE4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */ = {
@@ -421,7 +503,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UALYYJUG6;
 				INFOPLIST_FILE = kpAdvance/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qulix.kpAdvance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -437,11 +522,54 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UALYYJUG6;
 				INFOPLIST_FILE = kpAdvance/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qulix.kpAdvance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B00B834D221B26CE00ADBE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ8XNTC2X8;
+				INFOPLIST_FILE = kpAdvanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mistery.kpAdvanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpAdvance.app/kpAdvance";
+			};
+			name = Debug;
+		};
+		B00B834E221B26CE00ADBE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ8XNTC2X8;
+				INFOPLIST_FILE = kpAdvanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mistery.kpAdvanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpAdvance.app/kpAdvance";
 			};
 			name = Release;
 		};
@@ -462,6 +590,15 @@
 			buildConfigurations = (
 				75CF455C21F5FF7F00BE4AC9 /* Debug */,
 				75CF455D21F5FF7F00BE4AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00B834C221B26CE00ADBE4B /* Build configuration list for PBXNativeTarget "kpAdvanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00B834D221B26CE00ADBE4B /* Debug */,
+				B00B834E221B26CE00ADBE4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
