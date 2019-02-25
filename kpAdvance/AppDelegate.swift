@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let navigationController = UINavigationController(rootViewController: ViewController())
+        let startViewController = StartViewController()
+        startViewController.updateView()
+        let navigationController = UINavigationController(rootViewController: startViewController)
         window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()

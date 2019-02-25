@@ -13,6 +13,7 @@
 		7501636C21F63B4500D3C965 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501636021F63B4500D3C965 /* EventType.swift */; };
 		7501636E21F63B4500D3C965 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501636221F63B4500D3C965 /* User.swift */; };
 		7540515221F76C4F0065DCFA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540515021F76C4F0065DCFA /* Account.swift */; };
+		75C4806F22242A6C007C979B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E22242A6C007C979B /* StartViewController.swift */; };
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
 		75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		7501636021F63B4500D3C965 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		7501636221F63B4500D3C965 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7540515021F76C4F0065DCFA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		75C4806E22242A6C007C979B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		75C4806D22242A4B007C979B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75C4806E22242A6C007C979B /* StartViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		75CF454021F5FF7E00BE4AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		75CF454B21F5FF7E00BE4AC9 /* kpAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				75C4806D22242A4B007C979B /* Views */,
 				75CF456321F61EBD00BE4AC9 /* DataManagement */,
 				75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */,
 				75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */,
@@ -258,6 +269,7 @@
 				7501636A21F63B4500D3C965 /* Image.swift in Sources */,
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
 				7501636E21F63B4500D3C965 /* User.swift in Sources */,
+				75C4806F22242A6C007C979B /* StartViewController.swift in Sources */,
 				75CF456521F61ED700BE4AC9 /* DataController.swift in Sources */,
 				7501636621F63B4500D3C965 /* Transaction.swift in Sources */,
 				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
