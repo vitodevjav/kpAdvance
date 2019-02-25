@@ -115,8 +115,6 @@ class StartViewController: UIViewController {
             signInButton.widthAnchor.constraint(equalTo: mainControlsStackView.widthAnchor),
             signInButton.heightAnchor.constraint(equalToConstant: 44.0),
             ])
-
-//        mainControlsStackView.setCustomSpacing(55, after: startLabel)
     }
 
     func updateView() { // TODO: replace mock functions
