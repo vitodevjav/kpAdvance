@@ -22,6 +22,7 @@
 		75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */; };
 		75CF456521F61ED700BE4AC9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456421F61ED700BE4AC9 /* DataController.swift */; };
 		75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */; };
+		75ED71B422244C5D00730737 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED71B322244C5D00730737 /* Theme.swift */; };
 		FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		75CF456121F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kpAdvanceModel.xcdatamodel; sourceTree = "<group>"; };
 		75CF456421F61ED700BE4AC9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		75ED71B322244C5D00730737 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CD08069178A9D7764DB220DF /* Pods-kpAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		75CF454B21F5FF7E00BE4AC9 /* kpAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				75ED71B222244C4100730737 /* Extensions */,
 				75C4806D22242A4B007C979B /* Views */,
 				75CF456321F61EBD00BE4AC9 /* DataManagement */,
 				75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */,
@@ -132,6 +135,14 @@
 				75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */,
 			);
 			path = DataManagement;
+			sourceTree = "<group>";
+		};
+		75ED71B222244C4100730737 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75ED71B322244C5D00730737 /* Theme.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C6D7494944D17BFB5F57C3BE /* Frameworks */ = {
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75ED71B422244C5D00730737 /* Theme.swift in Sources */,
 				75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */,
 				7540515221F76C4F0065DCFA /* Account.swift in Sources */,
 				7501636A21F63B4500D3C965 /* Image.swift in Sources */,

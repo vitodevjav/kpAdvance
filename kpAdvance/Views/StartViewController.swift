@@ -41,7 +41,7 @@ class StartViewController: UIViewController {
     private let signInButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 65/255, green: 60/255, blue: 88/255, alpha: 1.0)
+        button.backgroundColor = Theme.Color.dusk
         button.layer.cornerRadius = 18
         return button
     }()
@@ -49,7 +49,7 @@ class StartViewController: UIViewController {
     private let signUpButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 65/255, green: 60/255, blue: 88/255, alpha: 1.0)
+        button.backgroundColor = Theme.Color.dusk
         button.layer.cornerRadius = 18
         return button
     }()
@@ -79,7 +79,7 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
+        view.backgroundColor = Theme.Color.gray
         view.addSubview(centeredView)
         centeredView.addSubview(labelImageView)
         centeredView.addSubview(textControlsStackView)
