@@ -11,21 +11,18 @@ import UIKit
 class StartViewController: UIViewController {
     private let labelImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "darkAppLabel"))
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
 
     private let greetingLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .title2)
         return label
     }()
 
     private let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.adjustsFontSizeToFitWidth = true
         label.font = UIFont.preferredFont(forTextStyle: .body)
         return label
@@ -33,30 +30,26 @@ class StartViewController: UIViewController {
 
     private let startLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: .title2)
         return label
     }()
 
     private let signInButton: UIButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 65/255, green: 60/255, blue: 88/255, alpha: 1.0)
+        button.backgroundColor = Theme.Color.dusk
         button.layer.cornerRadius = 18
         return button
     }()
 
     private let signUpButton: UIButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(red: 65/255, green: 60/255, blue: 88/255, alpha: 1.0)
+        button.backgroundColor = Theme.Color.dusk
         button.layer.cornerRadius = 18
         return button
     }()
 
     private lazy var mainControlsStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [startLabel ,signInButton, signUpButton])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 20
@@ -65,7 +58,6 @@ class StartViewController: UIViewController {
 
     private lazy var textControlsStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [greetingLabel, descriptionLabel])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 10
         return stackView
@@ -73,24 +65,23 @@ class StartViewController: UIViewController {
 
     private let centeredView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1)
+        view.backgroundColor = Theme.Color.gray
         view.addSubview(centeredView)
-        centeredView.addSubview(labelImageView)
-        centeredView.addSubview(textControlsStackView)
-        centeredView.addSubview(mainControlsStackView)
+        view.addSubview(labelImageView)
+        view.addSubview(textControlsStackView)
+        view.addSubview(mainControlsStackView)
         setUpConstraints()
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     private func setUpConstraints() {
+        view.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         NSLayoutConstraint.activate([
-
             centeredView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
             centeredView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             centeredView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
@@ -115,8 +106,6 @@ class StartViewController: UIViewController {
             signInButton.widthAnchor.constraint(equalTo: mainControlsStackView.widthAnchor),
             signInButton.heightAnchor.constraint(equalToConstant: 44.0),
             ])
-
-//        mainControlsStackView.setCustomSpacing(55, after: startLabel)
     }
 
     func updateView() { // TODO: replace mock functions
