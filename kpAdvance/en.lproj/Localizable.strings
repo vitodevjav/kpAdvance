@@ -6,6 +6,15 @@
   Copyright © 2019 Kazakevich, Vitaly. All rights reserved.
 */
 
+// Start screen
 "letsStart" = "Let's start!";
 "signIn" = "SIGN IN";
 "signUp" = "SIGN UP";
+
+// Authentication
+
+"email" = "E-mail";
+"password" = "Password";
+"mobileNumber" = "Mobile number";
+"useYourPhoneNumberInstead" = "Use your phone number instead";
+"signInByEmailAndPassword" = "Sign in by email and password";
