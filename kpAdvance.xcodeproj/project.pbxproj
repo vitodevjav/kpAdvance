@@ -22,6 +22,7 @@
 		75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */; };
 		75CF456521F61ED700BE4AC9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456421F61ED700BE4AC9 /* DataController.swift */; };
 		75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */; };
+		75E93E87222D607000FF79BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E93E89222D607000FF79BC /* Localizable.strings */; };
 		75ED71B422244C5D00730737 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED71B322244C5D00730737 /* Theme.swift */; };
 		FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,8 @@
 		75CF456121F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kpAdvanceModel.xcdatamodel; sourceTree = "<group>"; };
 		75CF456421F61ED700BE4AC9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		75CF456621F61EEA00BE4AC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		75E93E88222D607000FF79BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75E93E8A222D607F00FF79BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75ED71B322244C5D00730737 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CD08069178A9D7764DB220DF /* Pods-kpAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,7 @@
 				75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */,
 				75CF455821F5FF7F00BE4AC9 /* Info.plist */,
 				75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */,
+				75E93E89222D607000FF79BC /* Localizable.strings */,
 			);
 			path = kpAdvance;
 			sourceTree = "<group>";
@@ -197,6 +201,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 75CF454021F5FF7E00BE4AC9;
 			productRefGroup = 75CF454A21F5FF7E00BE4AC9 /* Products */;
@@ -214,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */,
+				75E93E87222D607000FF79BC /* Localizable.strings in Resources */,
 				75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */,
 				75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */,
 			);
@@ -302,6 +308,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		75E93E89222D607000FF79BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E93E88222D607000FF79BC /* en */,
+				75E93E8A222D607F00FF79BC /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -309,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -370,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
