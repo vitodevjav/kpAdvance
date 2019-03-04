@@ -9,46 +9,33 @@
 import UIKit
 
 class StartViewController: UIViewController {
-    private let labelImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "darkAppLabel"))
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-
-    private let startLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
-        return label
-    }()
-
-    private let signInButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = Theme.Color.purple
-        button.layer.cornerRadius = 18.0
-        return button
-    }()
-
-    private let signUpButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = Theme.Color.purple
-        button.layer.cornerRadius = 18.0
-        return button
-    }()
-
-    private lazy var containerView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [labelImageView, startLabel ,signInButton, signUpButton])
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.spacing = 20.0
-        stackView.setContentHuggingPriority(.required, for: .vertical)
-        return stackView
-    }()
+    private let labelImageView = UIImageView(image: #imageLiteral(resourceName: "darkAppLabel"))
+    private let startLabel = UILabel()
+    private let signInButton = UIButton()
+    private let signUpButton = UIButton()
+    private lazy var containerView = UIStackView(arrangedSubviews: [labelImageView, startLabel ,signInButton, signUpButton])
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Theme.Color.gray
+        setUpAppearance()
         setUpConstraints()
-        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+    private func setUpAppearance() {
+        navigationController?.setNavigationBarHidden(true, animated: false) // TODO: move to caller
+        view.backgroundColor = Theme.Color.gray
+
+        containerView.alignment = .center
+        containerView.spacing = 20.0
+
+        labelImageView.contentMode = .scaleAspectFit
+        startLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+
+        signInButton.backgroundColor = Theme.Color.purple
+        signInButton.layer.cornerRadius = 18.0
+
+        signUpButton.backgroundColor = Theme.Color.purple
+        signUpButton.layer.cornerRadius = 18.0
     }
 
     private func setUpConstraints() {

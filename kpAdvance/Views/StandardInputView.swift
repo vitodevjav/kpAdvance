@@ -9,6 +9,11 @@
 import UIKit
 
 class StandardInputView: UIView {
+    private let titleLabel = UILabel()
+    private let inputField = UITextField()
+    private let separatorView = UIView()
+    private lazy var container = UIStackView(arrangedSubviews: [titleLabel, inputField, separatorView])
+
     enum DisplayType {
         case plain, password
     }
@@ -17,16 +22,11 @@ class StandardInputView: UIView {
         return inputField.text ?? ""
     }
 
-    private let titleLabel = UILabel()
-    private let inputField = UITextField()
-    private let separatorView = UIView()
-    private lazy var container = UIStackView(arrangedSubviews: [titleLabel, inputField, separatorView])
-
     init() {
         super.init(frame: .zero)
         addSubview(container)
-        configureAppearance()
-        configureConstraints()
+        setUpAppearance()
+        setUpConstraints()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -39,7 +39,7 @@ class StandardInputView: UIView {
         inputField.isSecureTextEntry = shouldHideContent
     }
 
-    private func configureConstraints() {
+    private func setUpConstraints() {
         container.translatesAutoresizingMaskIntoConstraints = false
         container.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
 
@@ -53,7 +53,7 @@ class StandardInputView: UIView {
         container.setCustomSpacing(8.0, after: titleLabel)
     }
 
-    private func configureAppearance() {
+    private func setUpAppearance() {
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         separatorView.backgroundColor = .black
     }
