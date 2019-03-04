@@ -10,8 +10,8 @@ import UIKit
 
 struct Theme {
     struct Color {
-        static var dusk: UIColor { return UIColor(red: 65.0 / 255.0, green: 60.0 / 255.0, blue: 88.0 / 255.0, alpha: 1.0) }
-        static var dark: UIColor { return UIColor(red: 47.0 / 255.0, green: 43.0 / 255.0, blue: 64.0 / 255.0, alpha: 1.0) }
+        static var purple: UIColor { return UIColor(red: 65.0 / 255.0, green: 60.0 / 255.0, blue: 88.0 / 255.0, alpha: 1.0) }
+        static var darkPurple: UIColor { return UIColor(red: 47.0 / 255.0, green: 43.0 / 255.0, blue: 64.0 / 255.0, alpha: 1.0) }
         static var gray: UIColor { return UIColor(white: 239.0 / 255.0, alpha: 1.0) }
     }
 
