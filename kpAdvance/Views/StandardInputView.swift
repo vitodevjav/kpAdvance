@@ -17,24 +17,15 @@ class StandardInputView: UIView {
         return inputField.text ?? ""
     }
 
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.preferredFont(forTextStyle: .headline)
-        return label
-    }()
-
-    private let inputField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
-    }()
+    private let titleLabel = UILabel()
+    private let inputField = UITextField()
+    private let separatorView = UIView()
+    private lazy var container = UIStackView(arrangedSubviews: [titleLabel, inputField, separatorView])
 
     init() {
         super.init(frame: .zero)
-        addSubview(titleLabel)
-        addSubview(inputField)
-
+        addSubview(container)
+        configureAppearance()
         configureConstraints()
     }
 
@@ -49,15 +40,21 @@ class StandardInputView: UIView {
     }
 
     private func configureConstraints() {
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: topAnchor),
-            titleLabel.leftAnchor.constraint(equalTo: leftAnchor),
-            titleLabel.rightAnchor.constraint(equalTo: rightAnchor),
+        container.translatesAutoresizingMaskIntoConstraints = false
+        container.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
 
-            inputField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.0),
-            inputField.leftAnchor.constraint(equalTo: titleLabel.leftAnchor),
-            inputField.rightAnchor.constraint(equalTo: titleLabel.rightAnchor),
-            inputField.topAnchor.constraint(equalTo: bottomAnchor),
+        NSLayoutConstraint.activate([
+            container.topAnchor.constraint(equalTo: topAnchor),
+            container.leftAnchor.constraint(equalTo: leftAnchor),
+            container.rightAnchor.constraint(equalTo: rightAnchor),
+            container.topAnchor.constraint(equalTo: bottomAnchor),
             ])
+
+        container.setCustomSpacing(8.0, after: titleLabel)
+    }
+
+    private func configureAppearance() {
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        separatorView.backgroundColor = .black
     }
 }
