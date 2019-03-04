@@ -17,7 +17,7 @@ class StartViewController: UIViewController {
 
     private let startLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
         return label
     }()
 
