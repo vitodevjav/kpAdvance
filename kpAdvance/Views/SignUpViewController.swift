@@ -36,14 +36,7 @@ class SignUpViewController: UIViewController {
     }
 
     private func setUpConstraints() {
-        NSLayoutConstraint.activate([
-            containerView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 35.0),
-            containerView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35.0),
-            containerView.centerYAnchor.constraint(lessThanOrEqualTo: view.centerYAnchor),
-            containerView.topAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.topAnchor),
-            containerView.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor),
-            ])
-
+        containerView.pinToCenter(of: view, minimumAdaptiveInsets: UIEdgeInsets(top: 0.0, left: 35.0, bottom: 0.0, right: 35.0))
         containerView.setCustomSpacing(0.0, after: labelImageView)
         containerView.setCustomSpacing(50.0, after: passwordInputView)
     }
