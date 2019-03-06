@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController {
     private let nameInputView = StandardInputView()
     private let emailInputView = StandardInputView()
     private let passwordInputView = StandardInputView()
-    private let signUpButton = UIButton()
+    private let signUpButton = RoundedCornerButton(cornerRadius: 18.0)
     private let termsView = UILabel()
     private let containerView = UIStackView()
 
@@ -27,10 +27,7 @@ class SignUpViewController: UIViewController {
         nameInputView.configure(with: "Name", placeholder: "user name")
         emailInputView.configure(with: "E-mail", placeholder: "example@gmail.com")
         passwordInputView.configure(with: "Password", placeholder: "password", shouldHideContent: true)
-
         signUpButton.backgroundColor = Theme.Color.purple
-        signUpButton.layer.cornerRadius = 18.0
-
         termsView.font = UIFont.preferredFont(forTextStyle: .footnote)
         containerView.spacing = 20.0
     }

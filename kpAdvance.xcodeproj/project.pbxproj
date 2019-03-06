@@ -18,6 +18,7 @@
 		7541EDAC222D7EB600098ECB /* StandardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDAB222D7EB600098ECB /* StandardInputView.swift */; };
 		75744E7522302DC7004FB504 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E7422302DC7004FB504 /* SignUpViewController.swift */; };
 		75744E772230362C004FB504 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E762230362C004FB504 /* ViewExtensions.swift */; };
+		75744E79223038A6004FB504 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E78223038A6004FB504 /* RoundedCornerButton.swift */; };
 		75C4806F22242A6C007C979B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E22242A6C007C979B /* StartViewController.swift */; };
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		7541EDAB222D7EB600098ECB /* StandardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardInputView.swift; sourceTree = "<group>"; };
 		75744E7422302DC7004FB504 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		75744E762230362C004FB504 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		75744E78223038A6004FB504 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		75C4806E22242A6C007C979B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				7541EDA9222D7E6D00098ECB /* LoginViewController.swift */,
 				7541EDAB222D7EB600098ECB /* StandardInputView.swift */,
 				75744E7422302DC7004FB504 /* SignUpViewController.swift */,
+				75744E78223038A6004FB504 /* RoundedCornerButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				75ED71B422244C5D00730737 /* Theme.swift in Sources */,
 				75CF456721F61EEA00BE4AC9 /* CoreDataStack.swift in Sources */,
+				75744E79223038A6004FB504 /* RoundedCornerButton.swift in Sources */,
 				7540515221F76C4F0065DCFA /* Account.swift in Sources */,
 				7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */,
 				75744E772230362C004FB504 /* ViewExtensions.swift in Sources */,
