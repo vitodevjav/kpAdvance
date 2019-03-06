@@ -16,6 +16,7 @@
 		7541EDA8222D7C7900098ECB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDA7222D7C7900098ECB /* LoginService.swift */; };
 		7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDA9222D7E6D00098ECB /* LoginViewController.swift */; };
 		7541EDAC222D7EB600098ECB /* StandardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDAB222D7EB600098ECB /* StandardInputView.swift */; };
+		75744E7522302DC7004FB504 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E7422302DC7004FB504 /* SignUpViewController.swift */; };
 		75C4806F22242A6C007C979B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E22242A6C007C979B /* StartViewController.swift */; };
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		7541EDA7222D7C7900098ECB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		7541EDA9222D7E6D00098ECB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7541EDAB222D7EB600098ECB /* StandardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardInputView.swift; sourceTree = "<group>"; };
+		75744E7422302DC7004FB504 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		75C4806E22242A6C007C979B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				75C4806E22242A6C007C979B /* StartViewController.swift */,
 				7541EDA9222D7E6D00098ECB /* LoginViewController.swift */,
 				7541EDAB222D7EB600098ECB /* StandardInputView.swift */,
+				75744E7422302DC7004FB504 /* SignUpViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				7540515221F76C4F0065DCFA /* Account.swift in Sources */,
 				7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */,
 				7501636A21F63B4500D3C965 /* Image.swift in Sources */,
+				75744E7522302DC7004FB504 /* SignUpViewController.swift in Sources */,
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
 				7501636E21F63B4500D3C965 /* User.swift in Sources */,
 				75C4806F22242A6C007C979B /* StartViewController.swift in Sources */,
