@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
     }
 
     private func setUpAppearance() {
+        view.backgroundColor = Theme.Color.gray
         nameInputView.configure(with: "Name", placeholder: "user name")
         emailInputView.configure(with: "E-mail", placeholder: "example@gmail.com")
         passwordInputView.configure(with: "Password", placeholder: "password", shouldHideContent: true)
