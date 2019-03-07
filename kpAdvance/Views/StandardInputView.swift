@@ -33,7 +33,7 @@ class StandardInputView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with title: String, placeholder: String? = nil, shouldHideContent: Bool = false) {
+    func setUp(with title: String, placeholder: String? = nil, shouldHideContent: Bool = false) {
         titleLabel.text = title
         inputField.placeholder = placeholder
         inputField.isSecureTextEntry = shouldHideContent
@@ -47,13 +47,16 @@ class StandardInputView: UIView {
             container.topAnchor.constraint(equalTo: topAnchor),
             container.leftAnchor.constraint(equalTo: leftAnchor),
             container.rightAnchor.constraint(equalTo: rightAnchor),
-            container.topAnchor.constraint(equalTo: bottomAnchor),
+            container.bottomAnchor.constraint(equalTo: bottomAnchor),
+
+            separatorView.heightAnchor.constraint(equalToConstant: 1.0),
             ])
 
         container.setCustomSpacing(8.0, after: titleLabel)
     }
 
     private func setUpAppearance() {
+        container.axis = .vertical
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         separatorView.backgroundColor = .black
     }

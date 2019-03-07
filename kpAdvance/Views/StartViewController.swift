@@ -26,6 +26,7 @@ class StartViewController: UIViewController {
         view.backgroundColor = Theme.Color.gray
 
         containerView.alignment = .center
+        containerView.axis = .vertical
         containerView.spacing = 20.0
 
         labelImageView.contentMode = .scaleAspectFit
