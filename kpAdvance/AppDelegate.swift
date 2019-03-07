@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let startViewController = SignUpViewController() // Test mode
+        let startViewController = LoginViewController() // Test mode
 //        startViewController.updateView()
         let navigationController = UINavigationController(rootViewController: startViewController)
         navigationController.setNavigationBarHidden(true, animated: false)

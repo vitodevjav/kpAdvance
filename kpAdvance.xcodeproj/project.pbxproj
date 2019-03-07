@@ -257,7 +257,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -276,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCE1366E2E033E7BE2C38C27 /* [CP] Check Pods Manifest.lock */ = {
