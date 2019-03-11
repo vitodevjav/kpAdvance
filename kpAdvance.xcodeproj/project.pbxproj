@@ -21,8 +21,22 @@
 		75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */; };
 		75E93E87222D607000FF79BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E93E89222D607000FF79BC /* Localizable.strings */; };
 		75ED71B422244C5D00730737 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED71B322244C5D00730737 /* Theme.swift */; };
+		B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */; };
+		B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */; };
+		B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */; };
+		B00B8356221B2E7500ADBE4B /* TrackingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */; };
 		FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B00B834A221B26CE00ADBE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CF454121F5FF7E00BE4AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CF454821F5FF7E00BE4AC9;
+			remoteInfo = kpAdvance;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2FF3BD6974A3F42EBDC0767B /* Pods-kpAdvance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.release.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +58,12 @@
 		75E93E88222D607000FF79BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75E93E8A222D607F00FF79BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75ED71B322244C5D00730737 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
+		B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpAdvanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00B8349221B26CE00ADBE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractorTests.swift; sourceTree = "<group>"; };
+		B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingDataStore.swift; sourceTree = "<group>"; };
+		B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingTimer.swift; sourceTree = "<group>"; };
 		CD08069178A9D7764DB220DF /* Pods-kpAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +73,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1F84B52FEFAEEF4DE56016 /* Pods_kpAdvance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00B8342221B26CE00ADBE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				75CF454B21F5FF7E00BE4AC9 /* kpAdvance */,
+				B00B8346221B26CE00ADBE4B /* kpAdvanceTests */,
 				75CF454A21F5FF7E00BE4AC9 /* Products */,
 				43DDF8BB125A20CA1193B841 /* Pods */,
 				C6D7494944D17BFB5F57C3BE /* Frameworks */,
@@ -102,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */,
+				B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +138,7 @@
 		75CF454B21F5FF7E00BE4AC9 /* kpAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				B00B8352221B2A6400ADBE4B /* TrackingBusinessModel */,
 				7541EDA6222D7C6900098ECB /* Login */,
 				75ED71B222244C4100730737 /* Extensions */,
 				75C4806D22242A4B007C979B /* Views */,
@@ -130,6 +160,25 @@
 				75ED71B322244C5D00730737 /* Theme.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B00B8346221B26CE00ADBE4B /* kpAdvanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				B00B8349221B26CE00ADBE4B /* Info.plist */,
+				B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */,
+			);
+			path = kpAdvanceTests;
+			sourceTree = "<group>";
+		};
+		B00B8352221B2A6400ADBE4B /* TrackingBusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */,
+				B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */,
+				B00B8355221B2E7500ADBE4B /* TrackingTimer.swift */,
+			);
+			path = TrackingBusinessModel;
 			sourceTree = "<group>";
 		};
 		C6D7494944D17BFB5F57C3BE /* Frameworks */ = {
@@ -162,6 +211,24 @@
 			productReference = 75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B00B8344221B26CE00ADBE4B /* kpAdvanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00B834C221B26CE00ADBE4B /* Build configuration list for PBXNativeTarget "kpAdvanceTests" */;
+			buildPhases = (
+				B00B8341221B26CE00ADBE4B /* Sources */,
+				B00B8342221B26CE00ADBE4B /* Frameworks */,
+				B00B8343221B26CE00ADBE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00B834B221B26CE00ADBE4B /* PBXTargetDependency */,
+			);
+			name = kpAdvanceTests;
+			productName = kpAdvanceTests;
+			productReference = B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +241,10 @@
 				TargetAttributes = {
 					75CF454821F5FF7E00BE4AC9 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					B00B8344221B26CE00ADBE4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 75CF454821F5FF7E00BE4AC9;
 					};
 				};
 			};
@@ -192,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				75CF454821F5FF7E00BE4AC9 /* kpAdvance */,
+				B00B8344221B26CE00ADBE4B /* kpAdvanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +280,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00B8343221B26CE00ADBE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -218,21 +297,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,6 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */,
+				B00B8356221B2E7500ADBE4B /* TrackingTimer.swift in Sources */,
+				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
+				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
+				B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */,
 				75ED71B422244C5D00730737 /* Theme.swift in Sources */,
 				75744E79223038A6004FB504 /* RoundedCornerButton.swift in Sources */,
 				7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */,
@@ -277,7 +357,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00B8341221B26CE00ADBE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00B834B221B26CE00ADBE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CF454821F5FF7E00BE4AC9 /* kpAdvance */;
+			targetProxy = B00B834A221B26CE00ADBE4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */ = {
@@ -456,6 +552,46 @@
 			};
 			name = Release;
 		};
+		B00B834D221B26CE00ADBE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ8XNTC2X8;
+				INFOPLIST_FILE = kpAdvanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mistery.kpAdvanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpAdvance.app/kpAdvance";
+			};
+			name = Debug;
+		};
+		B00B834E221B26CE00ADBE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ8XNTC2X8;
+				INFOPLIST_FILE = kpAdvanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mistery.kpAdvanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kpAdvance.app/kpAdvance";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +609,15 @@
 			buildConfigurations = (
 				75CF455C21F5FF7F00BE4AC9 /* Debug */,
 				75CF455D21F5FF7F00BE4AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00B834C221B26CE00ADBE4B /* Build configuration list for PBXNativeTarget "kpAdvanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00B834D221B26CE00ADBE4B /* Debug */,
+				B00B834E221B26CE00ADBE4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
