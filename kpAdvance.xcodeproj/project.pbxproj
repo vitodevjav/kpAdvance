@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7541EDA8222D7C7900098ECB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDA7222D7C7900098ECB /* LoginService.swift */; };
+		7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDA9222D7E6D00098ECB /* LoginViewController.swift */; };
+		7541EDAC222D7EB600098ECB /* StandardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDAB222D7EB600098ECB /* StandardInputView.swift */; };
+		75744E7522302DC7004FB504 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E7422302DC7004FB504 /* SignUpViewController.swift */; };
+		75744E79223038A6004FB504 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75744E78223038A6004FB504 /* RoundedCornerButton.swift */; };
 		75C4806F22242A6C007C979B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E22242A6C007C979B /* StartViewController.swift */; };
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
@@ -38,6 +42,10 @@
 		2FF3BD6974A3F42EBDC0767B /* Pods-kpAdvance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.release.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.release.xcconfig"; sourceTree = "<group>"; };
 		4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kpAdvance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7541EDA7222D7C7900098ECB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		7541EDA9222D7E6D00098ECB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7541EDAB222D7EB600098ECB /* StandardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardInputView.swift; sourceTree = "<group>"; };
+		75744E7422302DC7004FB504 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		75744E78223038A6004FB504 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		75C4806E22242A6C007C979B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				75C4806E22242A6C007C979B /* StartViewController.swift */,
+				7541EDA9222D7E6D00098ECB /* LoginViewController.swift */,
+				7541EDAB222D7EB600098ECB /* StandardInputView.swift */,
+				75744E7422302DC7004FB504 /* SignUpViewController.swift */,
+				75744E78223038A6004FB504 /* RoundedCornerButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,10 +345,14 @@
 				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
 				B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */,
 				75ED71B422244C5D00730737 /* Theme.swift in Sources */,
+				75744E79223038A6004FB504 /* RoundedCornerButton.swift in Sources */,
+				7541EDAA222D7E6D00098ECB /* LoginViewController.swift in Sources */,
+				75744E7522302DC7004FB504 /* SignUpViewController.swift in Sources */,
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
 				75C4806F22242A6C007C979B /* StartViewController.swift in Sources */,
 				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
 				75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */,
+				7541EDAC222D7EB600098ECB /* StandardInputView.swift in Sources */,
 				7541EDA8222D7C7900098ECB /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
