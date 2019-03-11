@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7541EDA8222D7C7900098ECB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541EDA7222D7C7900098ECB /* LoginService.swift */; };
+		75C4806F22242A6C007C979B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4806E22242A6C007C979B /* StartViewController.swift */; };
 		75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */; };
 		75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */; };
 		75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */; };
 		75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455521F5FF7F00BE4AC9 /* LaunchScreen.storyboard */; };
 		75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */; };
 		75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */; };
+		75E93E87222D607000FF79BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E93E89222D607000FF79BC /* Localizable.strings */; };
+		75ED71B422244C5D00730737 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED71B322244C5D00730737 /* Theme.swift */; };
 		B00B8340221B258C00ADBE4B /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */; };
 		B00B8350221B26FA00ADBE4B /* TrackingInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B834F221B26FA00ADBE4B /* TrackingInteractorTests.swift */; };
 		B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B8353221B2A9200ADBE4B /* TrackingDataStore.swift */; };
@@ -33,6 +37,8 @@
 /* Begin PBXFileReference section */
 		2FF3BD6974A3F42EBDC0767B /* Pods-kpAdvance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kpAdvance.release.xcconfig"; path = "Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance.release.xcconfig"; sourceTree = "<group>"; };
 		4D43430E22F78367A4C99922 /* Pods_kpAdvance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kpAdvance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7541EDA7222D7C7900098ECB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		75C4806E22242A6C007C979B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		75CF454921F5FF7E00BE4AC9 /* kpAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,9 @@
 		75CF455821F5FF7F00BE4AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75CF456121F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kpAdvanceModel.xcdatamodel; sourceTree = "<group>"; };
+		75E93E88222D607000FF79BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75E93E8A222D607F00FF79BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		75ED71B322244C5D00730737 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B00B833F221B258C00ADBE4B /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
 		B00B8345221B26CE00ADBE4B /* kpAdvanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpAdvanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00B8349221B26CE00ADBE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +87,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7541EDA6222D7C6900098ECB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7541EDA7222D7C7900098ECB /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		75C4806D22242A4B007C979B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75C4806E22242A6C007C979B /* StartViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		75CF454021F5FF7E00BE4AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				B00B8352221B2A6400ADBE4B /* TrackingBusinessModel */,
+				7541EDA6222D7C6900098ECB /* Login */,
+				75ED71B222244C4100730737 /* Extensions */,
+				75C4806D22242A4B007C979B /* Views */,
 				75CF454C21F5FF7E00BE4AC9 /* AppDelegate.swift */,
 				75CF454E21F5FF7E00BE4AC9 /* ViewController.swift */,
 				75CF455321F5FF7F00BE4AC9 /* Assets.xcassets */,
@@ -109,8 +137,17 @@
 				75CF456021F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld */,
 				75CF455821F5FF7F00BE4AC9 /* Info.plist */,
 				75CF455E21F5FFC800BE4AC9 /* GoogleService-Info.plist */,
+				75E93E89222D607000FF79BC /* Localizable.strings */,
 			);
 			path = kpAdvance;
+			sourceTree = "<group>";
+		};
+		75ED71B222244C4100730737 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75ED71B322244C5D00730737 /* Theme.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B00B8346221B26CE00ADBE4B /* kpAdvanceTests */ = {
@@ -152,7 +189,6 @@
 				75CF454621F5FF7E00BE4AC9 /* Frameworks */,
 				75CF454721F5FF7E00BE4AC9 /* Resources */,
 				9835481A5D9C22BEE6CDE21B /* [CP] Embed Pods Frameworks */,
-				3F432F46F35FD28422C1518A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +243,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 75CF454021F5FF7E00BE4AC9;
 			productRefGroup = 75CF454A21F5FF7E00BE4AC9 /* Products */;
@@ -225,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CF455721F5FF7F00BE4AC9 /* LaunchScreen.storyboard in Resources */,
+				75E93E87222D607000FF79BC /* Localizable.strings in Resources */,
 				75CF455F21F5FFC800BE4AC9 /* GoogleService-Info.plist in Resources */,
 				75CF455421F5FF7F00BE4AC9 /* Assets.xcassets in Resources */,
 			);
@@ -240,47 +278,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F432F46F35FD28422C1518A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9835481A5D9C22BEE6CDE21B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kpAdvance/Pods-kpAdvance-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DCE1366E2E033E7BE2C38C27 /* [CP] Check Pods Manifest.lock */ = {
@@ -313,7 +332,12 @@
 				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
 				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
 				B00B8354221B2A9200ADBE4B /* TrackingDataStore.swift in Sources */,
+				75ED71B422244C5D00730737 /* Theme.swift in Sources */,
+				75CF456221F60F6F00BE4AC9 /* kpAdvanceModel.xcdatamodeld in Sources */,
+				75C4806F22242A6C007C979B /* StartViewController.swift in Sources */,
+				75CF454F21F5FF7E00BE4AC9 /* ViewController.swift in Sources */,
 				75CF454D21F5FF7E00BE4AC9 /* AppDelegate.swift in Sources */,
+				7541EDA8222D7C7900098ECB /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +368,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		75E93E89222D607000FF79BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E93E88222D607000FF79BC /* en */,
+				75E93E8A222D607F00FF79BC /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -351,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -412,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
