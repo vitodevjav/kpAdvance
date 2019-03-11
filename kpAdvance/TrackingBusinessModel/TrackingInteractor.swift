@@ -20,17 +20,15 @@ protocol TrackingInteractorProtocol {
 	func stopTracking()
 }
 
-class TrackingInteractor {
+class MockTrackingInteractor {
 	var delegate: TrackingInteractorDelegateProtocol?
-	var trackingDataStore: TrackingDataStoreProtocol?
-	var trackingTimer: TrackingTimerProtocol?
+	private var trackingDataStore: TrackingDataStoreProtocol?
+	private var trackingTimer: TrackingTimerProtocol?
 	private var currentTrackingInfo: String?
-	
-	
 }
 
 // MARK: - TrackingInteractorProtocol conformance
-extension TrackingInteractor: TrackingInteractorProtocol {
+extension MockTrackingInteractor: TrackingInteractorProtocol {
 	func startTracking(item: String) {
 		currentTrackingInfo = item
 		delegate?.trackingInteractorDidUpdateCurrentTrackingInfo(item)
